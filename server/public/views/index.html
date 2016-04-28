@@ -1,0 +1,40 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+  <title>My Angular App</title>
+  <script src="vendors/angular/angular.min.js"></script>
+  <script src="vendors/angular-route/angular-route.min.js"></script>
+  <script src="assets/scripts/client.min.js"></script>
+  <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css" />
+  <base href="/" />
+</head>
+
+  <body class="container">
+    <div class="jumbotron">
+      <h1>3 Political Candidates</h1>
+    </div>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/hilary">Hilary Clinton</a>
+          </li>
+          <li>
+            <a href="/donald">Donald Trump</a>
+          </li>
+          <li>
+            <a href="/ted">Ted Cruz</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div ng-view>
+
+    </div>
+
+</body>
+</html>
